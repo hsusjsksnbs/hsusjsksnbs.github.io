@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mr. Crypto Creator</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script src="../assets/js/web3.min.js"></script>
+    <script src="../../npm/cookie-bar/cookiebar-latest.min.js?forceLang=en&amp;theme=momh&amp;thirdparty=1&amp;always=1&amp;noGeoIp=1&amp;scrolling=1&amp;hideDetailsBtn=1" defer="true"></script>
+    <meta name="description" content="BEP20 Token Generator Documentation. Discover more details about different BEP20 Token Types, ABI, source code and analysis report.">
+    <meta property="twitter:title" content="BEP20 Token Documentation | BEP20 Token Generator">
+    <meta property="og:title" content="BEP20 Token Documentation | BEP20 Token Generator">
+    <meta property="twitter:description" content="BEP20 Token Generator Documentation. Discover more details about different BEP20 Token Types, ABI, source code and analysis report.">
+    <meta property="og:description" content="BEP20 Token Generator Documentation. Discover more details about different BEP20 Token Types, ABI, source code and analysis report.">
+    <meta property="og:url" content="https://vittominacori.github.io/bep20-generator/docs/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://vittominacori.github.io/bep20-generator/assets/images/bep20-token-generator.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://vittominacori.github.io/bep20-generator/assets/images/bep20-token-generator.png">
+    
+    <link rel="preload" href="../assets/css/0.styles.302fe431.css" as="style"><link rel="preload" href="../assets/js/app.5daa58ee.js" as="script"><link rel="preload" href="../assets/js/4.d505503b.js" as="script"><link rel="preload" href="../assets/js/8.10409a1f.js" as="script"><link rel="preload" href="../assets/js/3.2f93998c.js" as="script"><link rel="prefetch" href="../assets/js/1.be207ea7.js"><link rel="prefetch" href="../assets/js/10.1d55dcca.js"><link rel="prefetch" href="../assets/js/11.436d7e8b.js"><link rel="prefetch" href="../assets/js/12.56edaa50.js"><link rel="prefetch" href="../assets/js/13.85b9de8f.js"><link rel="prefetch" href="../assets/js/14.e6a787cc.js"><link rel="prefetch" href="../assets/js/15.b295c2a8.js"><link rel="prefetch" href="../assets/js/16.fa48b05a.js"><link rel="prefetch" href="../assets/js/17.2c14ed2c.js"><link rel="prefetch" href="../assets/js/18.7820eb48.js"><link rel="prefetch" href="../assets/js/19.4ec0d97e.js"><link rel="prefetch" href="../assets/js/5.7a9488ad.js"><link rel="prefetch" href="../assets/js/6.7d1d3c00.js"><link rel="prefetch" href="../assets/js/7.209ec564.js"><link rel="prefetch" href="../assets/js/9.c43c7156.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.302fe431.css">
+ 
+   <link rel="stylesheet" href="style.css"> 
+   <script src="main.js" defer></script> 
+   </head> 
+
+<body>
+
+<div id="app" data-server-rendered="true"><div class="page-wrapper"><nav class="navbar navbar-dark bg-dark navbar-expand-md"><button type="button" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button> <a href="../index.htm" target="_self" class="navbar-brand router-link-active"><svg viewbox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="house" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-house b-icon bi"><g><path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"></path></g></svg></a> <div id="nav_collapse" class="navbar-collapse collapse" style="display:none;"><ul class="navbar-nav">
+<li class="nav-item"><a href="" target="_self" class="nav-link">Crypto.Creator</a></li></ul> <ul class="navbar-nav ml-auto"><li class="nav-item"><a href="../index.htm" target="_self" class="nav-link router-link-active">Home</a></li> <li class="nav-item"><a href="../faq/decrypt.html" aria-current="page" target="_self" class="nav-link router-link-exact-active router-link-active active">Q&A</a></li> <li class="nav-item"><a href="../../erc20generator.html" rel="noopener" target="_blank" class="nav-link"><small>Developer</small></a></li></ul></div></nav> <div>
+
+<h1>FAQ About Token Features</h1>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      What's the difference between 100k, Fixed, Capped and Unlimited Supply?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <b>100k</b><br>
+                                    Your token supply will be 100.000.
+                                    The entire token supply will be generated during deploy and sent to Token Owner
+                                    wallet. You can't increase or reduce supply later.<br><br> <b>Fixed Supply</b><br>
+                                    The entire token supply will be generated during deploy and sent to Token Owner
+                                    wallet. You can't increase or reduce supply later.<br><br> <b>Capped Supply</b><br>
+                                    You can define an initial supply to sent to Token Owner's wallet. You can
+                                    increase or reduce supply later by minting or burning tokens (if allowed).
+                                    You won't be able to generate more tokens than the defined supply cap.<br><br> <b>Unlimited Supply</b><br>
+                                    You can define an initial supply to sent to Token Owner's wallet. You can
+                                    increase or reduce supply later by minting or burning tokens (if allowed).
+                                    You will be able to generate unlimited tokens without an upper limit.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      What's the difference between None, Ownable and Role Based Access?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<b>None</b><br>
+                                    Your Token doesn't need an access type because of there are not actions that
+                                    needs privileges.<br><br> <b>Ownable</b><br>
+                                    Your Token will have an Owner. The account you use to deploy your Token will be
+                                    owner by default and will be able to mint new tokens or call the finish minting
+                                    function. You can transfer token ownership to addresses or Smart Contract.
+                                    <br><br> <b>Role Based</b><br>
+                                    Your Token will have Roles. Accounts with "MINTER" role will be able to mint new
+                                    tokens. Accounts with "ADMIN" role will be able to add or remove roles to
+                                    minters or other admins. The account you use to deploy your Token will be ADMIN
+                                    and MINTER by default. In addition your Token will have the Ownable behaviour
+                                    too.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Who can mint or burn tokens?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <b>Mint</b><br>
+                                    It depends on your Token Access Type. If you choose Ownable Access only Token
+                                    Owner will be able to mint new tokens. If you choose Role Based Access only
+                                    addresses with MINTER role will be able to mint new tokens.
+                                    In both cases, if you choose a Capped supply you won't be able to mint more
+                                    tokens than the defined cap. By choosing Unlimited supply instead, you will be
+                                    able to generate unlimited tokens.<br><br> <b>Burn</b><br>
+                                    Everyone will be able to burn tokens he held. A third party can burn tokens from
+                                    other addresses only after an approval. Nobody, not even the Token Owner,
+                                    will be able to burn tokens from other addresses without approval.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      What is Operable Token?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+	  
+<span itemprop="text">
+                                    There is no way to execute code after a BEP-20 transfer or approval (i.e.
+                                    making a payment), so to make an action it is required to send another
+                                    transaction and pay GAS twice. Operable Token makes token payments easier and
+                                    working without the use of any other listener. It allows to make a callback
+                                    after a transfer or approval in a single transaction.<br>
+                                    There are many proposed uses of Ethereum Smart Contracts that can accept BEP-20
+                                    payments.<br>
+                                    Examples could be:
+                                    <li>
+                                            to create a token payable crowdsale
+                                        </li> <li>
+                                            selling services for tokens
+                                        </li> <li>
+                                            paying invoices
+                                        </li> <li>
+                                            making subscriptions
+                                        </li>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Will be having BEP20 Generator Copyright an issue?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    No. Your BEP20 Token is make exclusive for you and only you as an owner of
+									that token can access the features like minting and burning the token. Plus,
+							        there is no any copyright disclaimer at your token read contract.
+                                </span>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<h1>FAQ About Token Behaviours</h1>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Where is my Token address?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    Once we confirm your transaction to us, we will immediately create the token. After that, we
+									will send to you an information about Metamask wallet including password, passphrase and wallet address.
+									We also will send the transaction hash and Token address contract to you as proove.
+									We will never store your information as only you will be the owner of that token.
+									You also can transfer the ownership of the token if you want.
+        
+                                </span>	  
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Who will be Token Owner?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    Once your Token will be deployed you (your MetaMask address) will be the only
+                                    owner.
+                                </span>	  
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Where will token supply go after deploy?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<p itemscope="itemscope" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" class="card-text"><span itemprop="text">
+                                    The initial token supply will be held by the address used to deploy the token
+                                    (your MetaMask address). This address will be Token Owner and will be able to
+                                    generate new tokens (in case you selected a token type with Mintable behaviour).
+                                </span></p>	  
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Which wallet will my Token be supported by?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    Your Token will be a fully BEP20 compatible token. Any BEP20 wallet will support
+                                    your Token. (like Metamask and Trust Wallet)
+                                </span>	  
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      How to mint new tokens?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    To generate new tokens you must use the "mint" function using token owner
+                                    wallet. You can doing this by using the Contract/Write tab on your BscScan
+                                    token page.<br> <small>
+                                        Note: remember that your tokens has a number of decimals (usually 18), so
+                                        you must use the entire number with decimals.<br>I.e. if you need to
+                                        generate 500 additional tokens, call the mint function by inserting
+                                        500000000000000000000.
+                                    </small></span></p>	  
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Will my Token Source Code be verified on BscScan?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+	  <span itemprop="text">
+                                    Yes, your token source code will be already verified by "Similar Match".
+                                    If not verified, dont worry as we will verify your token manually at Bscscan Blockchain.
+                                </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Can I add logo and information to my token on BscScan?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    Once your token will be deployed you will be able to add information on BscScan
+                                    using their procedure.
+                                </span></p> <a href="https://bscscan.freshdesk.com/support/solutions/articles/67000221190-how-to-update-token-information-on-bscscan-" rel="noopener" target="_blank" class="card-link">
+                                Update Token Information
+                            </a>	  
+      </div>
+    </div>
+  </div>
+</div>  
+
+<h1>FAQ About Binance Smart Chain And Ecosystem</h1>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      What is Binance Smart Chain?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    Binance Chain was launched by Binance in April 2019. Its primary focus is to
+                                    facilitate fast, decentralized (or non-custodial) trading.<br>
+                                    Binance Smart Chain (BSC) is best described as a blockchain that runs in
+                                    parallel to the Binance Chain. Unlike Binance Chain, BSC boasts smart contract
+                                    functionality and compatibility with the Ethereum Virtual Machine (EVM).
+                                    The design goal here was to leave the high throughput of Binance Chain intact
+                                    while introducing smart contracts into its ecosystem.
+                                </span></p> <a href="https://docs.binance.org/smart-chain/guides/bsc-intro.html" rel="noopener" target="_blank" class="card-link">
+                                BSC official website
+                            </a>	  
+     
+    </div>
+  </div>
+</div>  
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      How to explore the BSC blockchain?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    A Block Explorer is basically a search engine that allows users to easily
+                                    lookup, confirm and validate transactions that have taken place on the Binance
+                                    Smart Chain.
+                                </span></p> <a href="https://bscscan.com" rel="noopener" target="_blank" class="card-link">
+                                BscScan
+                            </a>	  
+      
+    </div>
+  </div>
+</div>  
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      What is a DApp?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    <b>DApp is an abbreviated form for decentralized application.</b><br>
+                                    A DApp has its backend code running on a decentralized peer-to-peer network.
+                                    Contrast this with an app where the backend code is running on centralized
+                                    servers.<br>&nbsp <br>
+                                    A DApp can have frontend code and user interfaces written in any language (just
+                                    like an app) that can make calls to its backend. Furthermore, its frontend can
+                                    be hosted on decentralized storage such as Swarm or IPFS.<br>&nbsp <br>
+                                    <b>For an application to be considered a Dapp (pronounced Dee-app, similar to
+                                    Email) it must meet the following criteria:
+                                    </b> <li>
+                                            The application must be completely open-source, it must operate
+                                            autonomously, and with no entity controlling the majority of its tokens.
+                                            The application may adapt its protocol in response to proposed
+                                            improvements and market feedback but all changes must be decided by
+                                            consensus of its users.
+                                        </li> <li>
+                                            The application's data and records of operation must be
+                                            cryptographically stored in a public, decentralized blockchain in order
+                                            to avoid any central points of failure.
+                                        </li> <li>
+                                            The application must use a cryptographic token (bitcoin or a token
+                                            native to its system) which is necessary for access to the application
+                                            and any contribution of value from (miners / farmers) should be rewarded
+                                            in the application’s tokens.
+                                        </li> <li>
+                                            The application must generate tokens according to a standard
+                                            crytptographic algorithm acting as a proof of the value nodes are
+                                            contributing to the application (Bitcoin uses the Proof of Work
+                                            Algorithm).
+                                        </li></span></p>
+      
+    </div>
+  </div>
+</div>  
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      What is a BEP20 token?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+<span itemprop="text">
+                                    BEP-20 is a token standard on Binance Smart Chain that extends ERC-20, the most
+                                    common Ethereum token standard. You can think of it as a blueprint for tokens
+                                    that defines how they can be spent, who can spend them, and other rules for
+                                    their usage. Due to its similarity to Binance Chain’s BEP-2 and Ethereum’s
+                                    ERC-20, it’s compatible with both.<br>
+                                    BEP-20 was conceived as a technical specification for Binance Smart Chain,
+                                    with the goal of providing a flexible format for developers to launch a
+                                    range of different tokens. These could represent anything from shares in a
+                                    business to dollars stored in a bank vault (i.e., a stablecoin).
+                                </span></p> <a href="https://github.com/binance-chain/BEPs/blob/master/BEP20.md" rel="noopener" target="_blank" class="card-link">
+                                BEP20 Technical specification
+                            </a>   
+    </div>
+  </div>
+</div>  
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      What is GAS and how to set Gas price?
+    </div>
+    <div class="accordion-item-body">
+	<div class="accordion-item-body-content">
+<span itemprop="text">
+                                    "Gas" is the name for a special unit used in BSC. It measures how much
+                                    "work" an action or set of actions takes to perform.<br>
+                                    Every operation that can be performed by a transaction or contract on the
+                                    BSC platform costs a certain number of gas, with operations that require
+                                    more computational resources costing more gas than operations that require few
+                                    computational resources.<br>
+                                    The reason gas is important is that it helps to ensure an appropriate fee is
+                                    being paid by transactions submitted to the network. By requiring that a
+                                    transaction pay for each operation it performs (or causes a contract to
+                                    perform), we ensure that network doesn't become bogged down with performing
+                                    a lot of intensive work that isn't valuable to anyone.
+                                </span></p> <a href="https://bscscan.com/gastracker" rel="noopener" target="_blank" class="card-link">
+                                BscScan Gas tracker
+                            </a>      
+    </div>
+  </div>
+</div>    
+
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      How to connect MetaMask to Binance Smart Chain
+    </div>
+    <div class="accordion-item-body">
+	<div class="accordion-item-body-content">
+<span itemprop="text">
+                                    You need to access the <b>Settings</b> to point the wallet towards Binance Smart
+                                    Chain nodes. On the Settings page, locate the <b>Networks</b> menu.
+                                    Click <b>Add Network</b> in the top-right corner to manually add the Binance
+                                    Smart Chain one.<br>
+                                    There are two networks we can use here:
+                                    the testnet or the mainnet. Below are the parameters to fill in for each.
+                                    <br><br> <b>Mainnet (This is the one you are probably looking for)</b> <li>Network Name: Binance Smart Chain</li> <li>New RPC URL: https://bsc-dataseed.binance.org/</li> <li>ChainID: 56</li> <li>Symbol: BNB</li> <li>Block Explorer URL: https://bscscan.com</li> <b>Testnet</b> <li>Network Name: Binance Smart Chain - Testnet</li> <li>New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/</li> <li>ChainID: 97</li> <li>Symbol: BNB</li> <li>Block Explorer URL: https://testnet.bscscan.com</li></span></p> <a href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain" rel="noopener" target="_blank" class="card-link">
+                                More details
+                            </a>
+    </div>
+  </div>
+</div>    
+</div> 
+ 
+
+</body>
+</html>
